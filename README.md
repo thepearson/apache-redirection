@@ -13,7 +13,7 @@ The specific use case demonstrated here is redirecting requests to specific file
 1. **Clone the repository:**
 
    ```bash
-   git clone [git@github.com:thepearson/apache-redirection.git](git@github.com:thepearson/apache-redirection.git)  # Replace with your repo URL
+   git clone git@github.com:thepearson/apache-redirection.git
    cd apache-redirection
    ```
 
