@@ -13,8 +13,8 @@ The specific use case demonstrated here is redirecting requests to specific file
 1. **Clone the repository:**
 
    ```bash
-   git clone [https://github.com/](https://github.com/)<your-username>/apache-redirector-demo.git  # Replace with your repo URL
-   cd apache-redirector-demo
+   git clone [git@github.com:thepearson/apache-redirection.git](git@github.com:thepearson/apache-redirection.git)  # Replace with your repo URL
+   cd apache-redirection
    ```
 
 
@@ -49,4 +49,5 @@ This will start the Apache web server in a Docker container.
 
 
 ## License
-[Specify your license here (e.g., MIT, Apache 2.0, etc.)]
+
+MIT
