@@ -1,0 +1,11 @@
+services:
+  web:
+    image: httpd:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./webroot:/usr/local/apache2/htdocs
+      - ./redirects.conf:/usr/local/apache2/conf/redirects.conf
+      - ./redirects.txt:/usr/local/apache2/conf/redirects.txt
+      - ./httpd.conf:/usr/local/apache2/conf/httpd.conf  # Mount your custom Apache config
+    command: ["httpd-foreground"]  # Keep the container running
