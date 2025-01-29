@@ -8,6 +8,7 @@ This demo showcases how to efficiently manage a large number of URL redirections
 
 The specific use case demonstrated here is redirecting requests to specific files within an "original" directory to corresponding files in a "target" directory.  It also shows how to redirect to external websites.
 
+
 ## Installation and Setup
 
 1. **Clone the repository:**
@@ -29,7 +30,7 @@ The specific use case demonstrated here is redirecting requests to specific file
 
 This will start the Apache web server in a Docker container.
 
-4. **Access the demo:** Open your web browser and navigate to `http://localhost:8080/original/a.html`. You should be redirected to `http://localhost:8080/target/a.html`.  Try accessing other files in the `/original/` directory (e.g., `b.html`, `c.html`, etc.) to see the redirections in action.  Note that `g.html` redirects to an external site.
+4. **Access the demo:** Open your web browser and navigate to `http://localhost/original/a.html`. You should be redirected to `http://localhost/target/a.html`.  Try accessing other files in the `/original/` directory (e.g., `b.html`, `c.html`, etc.) to see the redirections in action.  Note that `g.html` redirects to an external site.
 
 
 ## File Structure Explanation
@@ -46,6 +47,16 @@ This will start the Apache web server in a Docker container.
  - **Dynamic redirect mapping**: Instead of a static `redirects.txt` file, you could integrate with a database or other data source to generate the redirect map dynamically.
  - **Error handling**: Implement error handling for cases where a requested URL is not found in the redirect map.
  - **dbm lookup file**: Use the `httxt2dbm` CLI tool to convert the text map to a `dbm` file format which is indexed and much faster.
+
+
+## Building for production
+
+You can build a container to use for production either via your own pipeline or locally.
+
+
+```
+docker build -t [yourproject]:[version] .
+```
 
 
 ## License
