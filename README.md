@@ -1,6 +1,6 @@
 # Apache Redirector Demo
 
-This project demonstrates the use of Apache's `mod_rewrite` and makes use of the `RewriteMap` directove to implement URL redirection based on a mapping defined in a text file.  It provides a simple setup using Docker Compose, making it easy to run and experiment with.
+This project demonstrates the use of Apache's `mod_rewrite` and makes use of the `RewriteMap` directive to implement URL redirection based on a mapping defined in a text file.  It provides a simple setup using Docker Compose, making it easy to run and experiment with.
 
 ## Purpose and Use Case
 
